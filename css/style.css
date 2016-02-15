@@ -1,0 +1,140 @@
+body {
+		font-family: 'Viga', sans-serif;
+
+	}
+
+	span {
+		display: inline;
+	}
+	
+	.status_wrap {
+		height: 500px;
+		width: 90%;
+		
+		margin: 0 auto;
+		position: relative;
+		z-index: 10;
+		padding-top: 2px;
+	}
+
+	.app-title, .app-creator {
+		height: 100px;
+	}
+
+	.app-creator {
+		text-align: right;
+		padding-top: 12px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		.app-title, .app-creator {
+			text-align: center;
+		}
+	}
+
+	.switches {
+		float: none;
+    	text-align: center;
+	}
+
+	.switch {
+		background-color: #E7E6E2;
+		margin: 4px auto 0;
+		padding: 4px;	
+		width: 50px;
+		position: relative;
+		top: 21px;
+		-webkit-transition: top 0.3s linear;
+  		transition: top 0.3s linear;
+	}
+
+	.active, .switch:hover  {
+		top : 0px;
+  		-webkit-transition: top 0.3s linear;
+  		transition: top 0.3s linear;
+	}
+	
+	.all:hover, .online:hover, .offline:hover {
+		cursor: pointer;
+	}
+
+	.all-circle, .online-circle, .offline-circle {
+		height: 10px;
+		width: 10px;
+		background-color: blue;
+		border-radius: 50%;
+		position: relative;
+		margin: 0 auto;
+		border: 1px solid #000000;
+	}
+
+	.online-circle {
+		background-color: green;
+	}
+
+	.offline-circle {
+		background-color: red;
+	}
+
+	.switch1, .switch2, .switch3{
+    	text-align: center;
+    	display: inline-block;
+		margin: 0 auto;
+	}
+
+	.twitch-user {
+		
+		width: 100%;
+		border-bottom: 2px solid #ffffff;
+		padding: 5px;
+		
+	}
+
+	.twitch-user-online {
+		background-color: #E9EDF9;
+		color: #7394F6;
+	}
+
+	.twitch-user-offline, .twitch-user-offline a {
+		background-color: #7394F6;
+		color: #E9EDF9;
+	}
+
+	.streamer-logo {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 2px solid #ffffff;
+	}
+	.row {
+		margin: 0;
+	}
+
+	.col-lg-5 {
+    padding-top: 15px;
+    text-align: center;
+	}
+
+	.col-lg-2 {
+    text-align: center;
+}
+
+.usr {
+	text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+	.usr {
+	text-align: center;
+	}
+}
+
+.search-bar {
+	background-color: #bbbab7;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    z-index: 1;
+}
